@@ -1,16 +1,87 @@
-# React + Vite
+React Simple Layout
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Описание проекта
 
-Currently, two official plugins are available:
+Данный проект разработан с использованием React и Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Цель проекта изучение модульной архитектуры фронтенд-приложений, создание компонентов и организация структуры проекта по принципам разделения ответственности.
 
-## React Compiler
+В качестве примера реализован макет сайта “Simple”, включающий шапку сайта, основной контент и подвал.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Используемые технологии
 
-## Expanding the ESLint configuration
+* React
+* Vite
+* JavaScript
+* HTML5
+* CSS3
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Модульная архитектура
+
+Модульная архитектура предполагает разделение приложения на отдельные независимые части (модули), каждая из которых отвечает за определённую функциональность.
+
+Преимущества модульной архитектуры:
+
+* удобство поддержки проекта;
+* повторное использование компонентов;
+* простота масштабирования;
+* улучшение читаемости кода;
+* разделение ответственности между компонентами.
+
+Структура проекта
+
+src/
+
+├── assets/
+
+├── components/
+
+├── App.jsx
+
+├── App.css
+
+├── main.jsx
+
+└── index.css
+
+Основные компоненты
+
+Header
+
+Компонент шапки сайта. Содержит логотип и навигационное меню.
+
+Hero
+
+Главный информационный блок страницы.
+
+Products
+
+Блок с карточками продукции.
+
+Footer
+
+Подвал сайта с дополнительной информацией.
+
+Адаптивность
+
+Для корректного отображения на мобильных устройствах используются media-запросы CSS.
+
+При уменьшении ширины экрана элементы перестраиваются в колонку, а изображения автоматически масштабируются.
+
+Запуск проекта
+
+Установка зависимостей:
+
+npm install
+
+Запуск проекта:
+
+npm run dev
+
+Сборка проекта:
+
+npm run build
+
+Результат
+
+В рамках работы был изучен процесс создания React-приложения с использованием Vite, рассмотрены принципы модульной архитектуры и разработан адаптивный макет с использованием компонентов React.
